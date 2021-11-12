@@ -1,8 +1,11 @@
+//const ErrorHandler = require("../utils/errorHandler");
+const asyncHandler = require('express-async-handler')
+const user = require('../models/userModel')
 
+exports.login = asyncHandler(async (req, res, next) => {
 
-exports.getSub = (req, res) => {
     res.json({
         success: true,
-        message: 'Welcome to Game...'
+        message: 'Welcome to Game....'
     })
-};
+})
