@@ -18,7 +18,7 @@ var UserSchema = new mongoose.Schema({
     sixPlayerWins: Number,
 }, { timestamps: true });
 
-const user = mongoose.model('User', UserSchema);
+const User = mongoose.model('User', UserSchema);
 
-module.exports = user
+module.exports = User
 
